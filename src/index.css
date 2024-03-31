@@ -1,0 +1,35 @@
+:root {
+  --color-100: #F8F9FA;
+  --color-200: #E9ECEF;
+  --color-300: #DEE2E6;
+  --color-400: #ffff;
+  --font-color: black;
+}
+
+[data-theme="dark"] {
+  --color-100: #6C757D;
+  --color-200: #495057;
+  --color-300: #343A40;
+  --color-400: #212529;
+  --font-color: white;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+
+#root {
+  /* min-height: 100vh; */
+  background-color: var(--color-400);
+
+}

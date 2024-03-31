@@ -1,0 +1,146 @@
+.hero-section {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.media-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.media-links a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+.media-links a:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.media-links a:visited {
+  color: var(--font-color);
+}
+
+.hero-content {
+  padding: 4rem 3rem;
+  display: flex;
+  align-items: stretch;
+}
+
+.content {
+  flex: 1.25;
+  margin-right: 2rem;
+}
+
+.scroll {
+  text-align: center;
+}
+
+.scroll-icon {
+  /* margin-left: 1rem; */
+  margin-top: 1rem;
+  animation: scroll-down 2s infinite;
+  backface-visibility: hidden;
+}
+
+@keyframes scroll-down {
+  from {
+    transform: translateY(-.4rem);
+  }
+
+  50% {
+    transform: translateY(.4rem);
+  }
+
+  100% {
+    transform: translateY(-.4rem);
+  }
+}
+
+.content-heading {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 2.5rem;
+}
+
+.content-subheading {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.content-description {
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+
+.content-image-wrapper {
+  flex: .75;
+  display: flex;
+  align-items: center;
+}
+
+.content-image-wrapper img {
+  width: 100%;
+  clip-path: circle(39%);
+
+}
+
+
+.contact-btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  background-color: #4097ff;
+  color: var(--font-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  border-radius: .5rem;
+
+}
+
+.contact-btn svg {
+  margin-left: .5rem;
+}
+
+@media only screen and (max-width : 1024px) {
+  .hero-section {
+    display: block;
+  }
+
+  .media-links {
+    display: block;
+    text-align: center;
+  }
+
+  .media-links a:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+
+  .content-image-wrapper {
+    text-align: center;
+
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-content {
+    padding: 1rem;
+  }
+
+
+  .hero-content {
+    display: block;
+  }
+
+  .content {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+}

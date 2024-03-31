@@ -1,0 +1,12 @@
+.app {
+  background-color: var(--color-400);
+  transition: all .5s;
+
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  min-height: 100vh;
+  color: var(--font-color);
+}
